@@ -4,15 +4,39 @@ import re
 import string
 from collections import Counter, defaultdict
 
-
 TAG_PATTERN = re.compile(r'''
-    (@\w+)              |  # @param, @return
-    (:\w+:)             |  # :param:, :return:
-    (<[^>]+>)           |  # <p>, <code>, etc.
-    (///+|/\*\*|\*/|//) |  # C++/Rust/C-style comment symbols
-    ([\*\#\-\=]{2,})    |  # Markdown headers or list markers
-    (\bArgs\b|\bReturns\b|\bRaises\b|\bThrows\b|\bType\b)  # section headers
-''', re.VERBOSE | re.IGNORECASE)
+    /\*\*            |   # /**  
+    \*/              |   # */
+
+    //               |   # C++/Java single-line
+    \#               |   # Python single-line
+
+    ^\s*\*           |   # “ * this line”
+
+    \b[A-Z][a-z0-9]+(?:[A-Z][a-z0-9]+)+\b  |  # PascalCase (≥2 segments)
+    \b[a-z]+(?:[A-Z][a-z0-9]+)+\b          |  # camelCase
+    \b[a-z]+(?:_[a-z0-9]+)+\b              |  # snake_case
+    \b[a-z]+(?:-[a-z0-9]+)+\b              |  # kebab-case
+
+    (?xi:
+        @(?:param|return|throws)    # @param, @return, @throws
+        \s+                         #   plus one or more spaces
+        [A-Za-z_]\w*                #   the parameter or exception name
+    )                              
+
+    | (?xi:
+        :(?:param|return|raises):  # :param:, :return:, :raises:
+        \s*
+        [A-Za-z_]\w*                #   the name after the colon-tag
+    )
+
+    (?i:<\/?\w+[^>]*>)  |  # <p>, <code>, …
+    [`\[\]\(\)]        |  # backticks, brackets
+    [\*\#\-\=]{2,}       # **bold**, ## headers, == …
+
+    (?i:\b(?:Args|Returns?|Raises?|Throws?|Type|Example|Usage|See\s+Also)\b)
+
+''', re.VERBOSE | re.MULTILINE)
 
 PUNCTUATION_TABLE = str.maketrans(string.punctuation, ' ' * len(string.punctuation))
 
@@ -21,18 +45,30 @@ ft = fasttext.load_model('lid.176.bin')
 def smooth(final_langs, index_map, half_window=3):
     smoothed = []
     array_size = len(final_langs)
+
     for i, (pos, lang) in enumerate(final_langs):
-        # look in a ±window around i
+        # always skip masked chars
         if index_map[i] is None:
             smoothed.append((pos, "-1"))
             continue
         else:
-            lo = max(0, i - half_window)
-            hi = min(array_size, i + half_window + 1)
-            window_langs = [l for _, l in final_langs[lo:hi]]
-            # pick the most common
-            top = Counter(window_langs).most_common(1)[0][0]
-            smoothed.append((pos, top))
+            start = max(0, min(i - half_window, array_size - half_window * 2))
+            end = min(array_size, start + half_window * 2)
+
+            window = final_langs[start:end]
+
+            window_langs = [l for _, l in window]
+
+            counts = Counter(window_langs)
+            top_lang, top_count = counts.most_common(1)[0]
+
+            if top_count >= 2:
+                if top_lang == "-1":
+                    smoothed.append((pos, lang))
+                else:
+                    smoothed.append((pos, top_lang))
+            else:
+                smoothed.append((pos, "-1"))
     return smoothed
 
 def clean_and_map(input_text: str) -> tuple:
@@ -80,6 +116,7 @@ def fallback_lang(input_text: str, index:int, window_size:int):
             isPlainText=True,
             bestEffort=True,
             debugScoreAsQuads=True)
+
         if reliable:
             return details[0][1].lower()
     except Exception:
@@ -128,12 +165,14 @@ def sliding_windows_comments(input_text: str, top_k=3):
 
 def detect_language_in_comment(starting_position_in_code: int, input_text: str) -> list:
 
+    if len(input_text) < 5:
+        return [(starting_position_in_code + i, "-1") for i in range(len(input_text))]
+
     cleaned_text, index_map = clean_and_map(input_text)
     cleaned_text = cleaned_text.replace('\n', ' ').replace('\r', ' ')
 
     labels, probs = ft.predict(cleaned_text, k=1)
     full_lang, full_conf = labels[0].replace('__label__', ''), probs[0]
-    print(index_map)
 
     if full_conf >= 0.95:
         return [
@@ -199,8 +238,6 @@ def detect_language_in_comment(starting_position_in_code: int, input_text: str) 
             lang = fallback_lang(cleaned_text, i, window_length)
         final_langs.append((starting_position_in_code + i,lang))
 
-    print(final_langs)
-    print(index_map)
     # Smooth the final languages
     final_langs = smooth(final_langs, index_map, half_window=3)
 

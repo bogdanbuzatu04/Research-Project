@@ -2,6 +2,8 @@
 .idea/
 *.iml
 
+lid.176.bin
+
 # Python bytecode
 __pycache__/
 *.py[cod]

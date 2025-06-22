@@ -1,0 +1,528 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "Java",
+  "dataset_name": "the-heap",
+  "dataset_size": 31850465799,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00000-of-00064.parquet": {
+      "num_bytes": 129673255,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00001-of-00064.parquet": {
+      "num_bytes": 128766980,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00002-of-00064.parquet": {
+      "num_bytes": 118083498,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00003-of-00064.parquet": {
+      "num_bytes": 138862891,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00004-of-00064.parquet": {
+      "num_bytes": 137183747,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00005-of-00064.parquet": {
+      "num_bytes": 117743253,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00006-of-00064.parquet": {
+      "num_bytes": 114715211,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00007-of-00064.parquet": {
+      "num_bytes": 118182106,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00008-of-00064.parquet": {
+      "num_bytes": 130979110,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00009-of-00064.parquet": {
+      "num_bytes": 128704403,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00010-of-00064.parquet": {
+      "num_bytes": 121329196,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00011-of-00064.parquet": {
+      "num_bytes": 131168296,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00012-of-00064.parquet": {
+      "num_bytes": 124424649,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00013-of-00064.parquet": {
+      "num_bytes": 139959230,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00014-of-00064.parquet": {
+      "num_bytes": 152355802,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00015-of-00064.parquet": {
+      "num_bytes": 117036119,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00016-of-00064.parquet": {
+      "num_bytes": 118772318,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00017-of-00064.parquet": {
+      "num_bytes": 122040582,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00018-of-00064.parquet": {
+      "num_bytes": 136560522,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00019-of-00064.parquet": {
+      "num_bytes": 104080696,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00020-of-00064.parquet": {
+      "num_bytes": 144091853,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00021-of-00064.parquet": {
+      "num_bytes": 131372634,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00022-of-00064.parquet": {
+      "num_bytes": 129773611,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00023-of-00064.parquet": {
+      "num_bytes": 126302562,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00024-of-00064.parquet": {
+      "num_bytes": 125950449,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00025-of-00064.parquet": {
+      "num_bytes": 123609495,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00026-of-00064.parquet": {
+      "num_bytes": 114481031,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00027-of-00064.parquet": {
+      "num_bytes": 141062451,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00028-of-00064.parquet": {
+      "num_bytes": 115637693,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00029-of-00064.parquet": {
+      "num_bytes": 119938718,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00030-of-00064.parquet": {
+      "num_bytes": 116833887,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00031-of-00064.parquet": {
+      "num_bytes": 123938395,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00032-of-00064.parquet": {
+      "num_bytes": 143042731,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00033-of-00064.parquet": {
+      "num_bytes": 123671905,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00034-of-00064.parquet": {
+      "num_bytes": 115448859,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00035-of-00064.parquet": {
+      "num_bytes": 135252270,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00036-of-00064.parquet": {
+      "num_bytes": 126637583,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00037-of-00064.parquet": {
+      "num_bytes": 109764067,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00038-of-00064.parquet": {
+      "num_bytes": 126045370,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00039-of-00064.parquet": {
+      "num_bytes": 112467716,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00040-of-00064.parquet": {
+      "num_bytes": 135731695,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00041-of-00064.parquet": {
+      "num_bytes": 113661040,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00042-of-00064.parquet": {
+      "num_bytes": 128824660,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00043-of-00064.parquet": {
+      "num_bytes": 132631558,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00044-of-00064.parquet": {
+      "num_bytes": 123753349,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00045-of-00064.parquet": {
+      "num_bytes": 121447119,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00046-of-00064.parquet": {
+      "num_bytes": 109934803,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00047-of-00064.parquet": {
+      "num_bytes": 117965625,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00048-of-00064.parquet": {
+      "num_bytes": 118243614,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00049-of-00064.parquet": {
+      "num_bytes": 165940448,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00050-of-00064.parquet": {
+      "num_bytes": 123204824,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00051-of-00064.parquet": {
+      "num_bytes": 146351671,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00052-of-00064.parquet": {
+      "num_bytes": 107886760,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00053-of-00064.parquet": {
+      "num_bytes": 154251826,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00054-of-00064.parquet": {
+      "num_bytes": 175838621,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00055-of-00064.parquet": {
+      "num_bytes": 120339743,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00056-of-00064.parquet": {
+      "num_bytes": 95406294,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00057-of-00064.parquet": {
+      "num_bytes": 122054799,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00058-of-00064.parquet": {
+      "num_bytes": 122419306,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00059-of-00064.parquet": {
+      "num_bytes": 140591005,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00060-of-00064.parquet": {
+      "num_bytes": 134979944,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00061-of-00064.parquet": {
+      "num_bytes": 136368442,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00062-of-00064.parquet": {
+      "num_bytes": 116011416,
+      "checksum": null
+    },
+    "hf://datasets/AISE-TUDelft/the-heap@cf68880ccd9a7ac7dce6d1a8e02c2e5797c40fb3/data/Java/train-00063-of-00064.parquet": {
+      "num_bytes": 128116539,
+      "checksum": null
+    }
+  },
+  "download_size": 8127900245,
+  "features": {
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "file_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "file_path": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "content": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "size": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "language": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "extension": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "total_lines": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "avg_line_length": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "max_line_length": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "alphanum_fraction": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "repo_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "repo_stars": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "repo_forks": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "repo_open_issues": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "repo_license": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "repo_extraction_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "exact_duplicates_stackv2": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "exact_duplicates_stackv1": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "exact_duplicates_redpajama": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "exact_duplicates_githubcode": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "near_duplicates_stackv2": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "near_duplicates_redpajama": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "near_duplicates_stackv1": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "near_duplicates_githubcode": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "language_detected": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_identifiers": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_max_identifiers": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_freq_identifiers": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_comments": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_max_comments": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_freq_comments": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_strings": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_max_strings": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "lang_freq_strings": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 39978366044,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 31850465799,
+      "num_examples": 5168193,
+      "shard_lengths": [
+        75000,
+        84754,
+        91506,
+        71753,
+        78000,
+        87506,
+        94753,
+        62753,
+        76000,
+        82753,
+        87506,
+        76753,
+        80753,
+        79000,
+        75753,
+        83753,
+        3753,
+        88753,
+        84753,
+        80753,
+        68753,
+        76000,
+        76753,
+        85753,
+        76753,
+        7753,
+        83753,
+        89753,
+        84753,
+        64753,
+        86753,
+        98753,
+        75753,
+        61753,
+        73000,
+        82753,
+        89506,
+        72000,
+        5753,
+        82753,
+        95753,
+        83753,
+        60753,
+        79000,
+        89506,
+        82753,
+        63000,
+        8753,
+        83753,
+        80753,
+        100753,
+        57753,
+        90753,
+        49000,
+        84753,
+        85753,
+        12753,
+        90753,
+        72753,
+        42000,
+        88753,
+        28753,
+        102753,
+        76753,
+        85753,
+        57753,
+        73000,
+        80753,
+        84753,
+        84506
+      ],
+      "dataset_name": "the-heap"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
